@@ -1,0 +1,12 @@
+version: "3.8"
+services: 
+    app:
+        build: 
+            context: .
+        volumes: 
+            - .:/core
+        ports: 
+            - 3001:3001
+        image: simonmathelela/pokedexbackend
+        container_name: pokedexbackend
+        command: npm run devStart
