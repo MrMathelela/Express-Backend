@@ -16,8 +16,8 @@ app.get('/getall', (req, res) => {
             result(null, err);
             return;
         }
-        res.send(results)
-        console.log("pokeapi_urls: ", results);
+        res.send(results[0])
+        console.log("pokeapi_urls: ", results[0]);
     });
 
 })
